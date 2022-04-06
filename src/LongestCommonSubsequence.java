@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class LongestCommonSubsequence {
     public static int n;
