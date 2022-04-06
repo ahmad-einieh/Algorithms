@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-// wrong need edit
 public class LongestContiguousOddSubsequence {
     public static int LCOS(int[] nums) {
         int[] n2 = new int[nums.length];
@@ -16,16 +15,9 @@ public class LongestContiguousOddSubsequence {
             if (nums[i - 1] % 2 != 0 && nums[i] % 2 != 0)
                 n2[i] = n2[i - 1] + 1;
         }
-        /*int max = 0;
-        for (var j : n2) {
-            if (j != null && j.length > max) {
-                max = j.length;
-                for (var k : j)
-                    System.out.println(k);
-            }
-        }*/
-        for (int i =0;i<n2.length;i++){
-            System.out.print(n2[i]+" ");
+
+        for (int i = 0; i < n2.length; i++) {
+            System.out.print(n2[i] + " ");
         }
         System.out.println();
         return Arrays.stream(n2).max().getAsInt();
