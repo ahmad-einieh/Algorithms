@@ -30,9 +30,9 @@ public class LongestCommonSubsequence {
             c[0][j] = 0;
         }
 
-        for (int i = 1; i <A.length(); i++) {
-            for (int j = 1; j < B.length(); j++) {
-                if (A.charAt(i) == B.charAt(j)) {
+        for (int i = 1; i <=A.length(); i++) {
+            for (int j = 1; j <= B.length(); j++) {
+                if (A.charAt(i-1) == B.charAt(j-1)) {
                     c[i][j] = c[i - 1][j - 1] + 1;
                 } else {
                     c[i][j] = Integer.max(c[i - 1][j], c[i][j - 1]);
@@ -46,5 +46,6 @@ public class LongestCommonSubsequence {
 
         System.out.println(LCS("ABCBDAB", "BDCABA"));
         System.out.println(LCS("ACELSFRE", "ASELFOXR"));
+        System.out.println(LCS("abcde", "ace"));
     }
 }
