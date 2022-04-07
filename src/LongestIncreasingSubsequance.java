@@ -14,7 +14,6 @@ public class LongestIncreasingSubsequance {
             }
         }
 
-
         return Arrays.stream(num2).max().getAsInt();
     }
 

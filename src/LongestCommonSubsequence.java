@@ -46,5 +46,6 @@ public class LongestCommonSubsequence {
         System.out.println(LCS("ABCBDAB", "BDCABA"));
         System.out.println(LCS("ACELSFRE", "ASELFOXR"));
         System.out.println(LCS("abcde", "ace"));
+        System.out.println(LCS("car", "cesar"));
     }
 }
