@@ -1,5 +1,6 @@
 
 public class LongestCommonSubsequence {
+
     public static int n;
     public static int m;
 

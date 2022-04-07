@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class LongestIncreasingSubsequance {
 
-
     public static int LIS(int[] nums) {
         int[] num2 = new int[nums.length];
         Arrays.fill(num2, 1);

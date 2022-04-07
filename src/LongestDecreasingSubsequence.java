@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class LongestDecreasingSubsequence {
+
     public static int LDS(int[] nums) {
         int[] num2 = new int[nums.length];
         Arrays.fill(num2, 1);
