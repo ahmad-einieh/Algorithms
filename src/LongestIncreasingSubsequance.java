@@ -7,7 +7,7 @@ public class LongestIncreasingSubsequance {
         Arrays.fill(num2, 1);
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < i ; j++) {
-                if (nums[i] > nums[j] && num2[j] >= num2[i]) {
+                if (nums[i] > nums[j] && num2[i] <= num2[j]) {
                     num2[i] = num2[j] + 1;
                 }
             }
